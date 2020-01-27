@@ -1,9 +1,12 @@
+<?= 'Hello, Php' ?>
+
 <?php
-echo('Hello PHP!');
-echo('/aaa.php');
+echo('aaa\n');
+print("bbb\n");
+
 $xx = array(
   'aa' => '11',
   'bb' => '22'
 );
-echo($xx);
+print_r($xx);
 ?>
