@@ -1,12 +1,14 @@
-<?= 'Hello, Php' ?>
-
 <?php
-echo('aaa\n');
-print("bbb\n");
 
-$xx = array(
-  'aa' => '11',
-  'bb' => '22'
+$obj = array(
+    "aaa" => array(
+        "required" => true
+    )
 );
-print_r($xx);
+
+foreach ($obj as $key => $value) {
+    $aaa[$key]['required'] = false;
+}
+
+print(json_encode($obj));
 ?>
